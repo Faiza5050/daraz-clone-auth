@@ -4,7 +4,8 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/src/index.html"
     }
-  ]
+  ],
+  "cleanUrls": true
 }
