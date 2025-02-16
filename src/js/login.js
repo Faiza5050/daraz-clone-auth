@@ -1,28 +1,35 @@
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js";
-import app from "../firebase-config.js";
+import app from "../firebaseConfig.js"; // ✅ Path corrected
 
 const auth = getAuth(app);
 
 document.getElementById("login-form").addEventListener("submit", async function (event) {
     event.preventDefault();
 
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
 
     try {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        
+        // ✅ Login success alert
         alert("Login successful!");
 
-        // User ka data save karna (optional)
+        // ✅ User data localStorage me save karo
         localStorage.setItem("user", JSON.stringify(userCredential.user));
 
-        // Form reset karein
+        // ✅ Form reset
         document.getElementById("login-form").reset();
 
-        // Redirect to homepage after login
-        window.location.href = "../index.html"; 
+        // ✅ Redirect to homepage
+        setTimeout(() => {
+            window.location.href = "../index.html";
+        }, 1000);
+
     } catch (error) {
         console.error("Login Error:", error);
-        alert("Login failed: " + error.message);
+
+        // ✅ Better error message
+        alert(`Login failed: ${error.message}`);
     }
 });
