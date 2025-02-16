@@ -1,7 +1,6 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "public",
-  "public": "src",
   "routes": [
     {
       "src": "/(.*)",
