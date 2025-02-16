@@ -1,11 +1,11 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/index.html", // Target index.html inside the src folder
-    "./src/**/*.html",  // This ensures any HTML files inside src are included
-    "./src/css/**/*.css" // Make sure your CSS files inside src are considered too
+    "./src/**/*.html", // Saare HTML files inside 'src' folder
+    "./src/**/*.js"    // JS files agar aap dynamic classes use kar rahe hain
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
