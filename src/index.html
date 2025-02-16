@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daraz Website</title>
+    <link href="./css/output.css" rel="stylesheet">
+    <script src=".src/0main.js"></script>
+</head>
+<body>
+
+    <header class="bg-[#f85606] p-4">
+
+        <div class="hidden md:flex ml-auto space-x-4 justify-end text-white">
+            <ul class="flex space-x-4">
+                <li><button>SAVE MORE ON APP</button></li>
+                <li><button>SELL ON DARAZ</button></li>
+                <li><button>HELP & SUPPORT</button></li>
+                <li><a href="./components/login.html" class="text-white">LOGIN</a></li>
+                <li><a href="./components/signup.html" class="text-white">SIGN UP</a></li>
+                <li><button class="font-bold" dir="rtl" lang="ur">زبان تبدیل کریں</button></li>
+            </ul>
+        </div>
+
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div>
+                <img height="50" width="200" src="./assets/logo.png" alt="Daraz Logo">
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="hidden md:flex flex-grow mx-14">
+                <input type="text" placeholder="Search in Daraz" class="w-full md:w-[600px] md:h-[50px] mt-4 p-2 border rounded-l-md focus:outline-none">
+                <button class="bg-gray-400 px-4 md:h-[50px] mt-4 rounded-r-md">
+                    <img height="20" width="40" src="./assets/icon.png" alt="Search Icon">
+                </button>
+            </div>
+            
+            <!-- Right Section -->
+            <div class="flex items-center space-x-6 text-white">
+                <button class="relative mr-64 mt-5">
+                    <img src="assets/cart.png" alt="Cart">
+                    <span class="absolute -top-2 -right-2 bg-black text-white text-xs px-2 rounded-full">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex justify-center items-center">
+            <div class="banner flex gap-4">
+                <div>
+                    <img width="900px" src="./assets/banner1.jpg" alt="image">
+                </div>
+                <div>
+                    <div class="app-pannel justify-center items-center mt-5 flex gap-8">
+                        <img width="40px" height="30px" src="./assets/pannel1.jpg" alt="Download Pannel">
+                        <h2 class="text-lg font-bold">TRY DARAZ APP</h2>
+                    </div>
+                    <div class="gap-4 mt-5">
+                        <img width="200px" src="./assets/card-pay.png" alt="app">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-gray-100 text-gray-700 text-sm mt-10">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Section 1: Customer Care -->
+                <div>
+                    <h3 class="text-gray-900 font-bold text-lg">Customer Care</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline">Help Center</a></li>
+                        <li><a href="#" class="hover:underline">How to Buy</a></li>
+                        <li><a href="#" class="hover:underline">Track Your Order</a></li>
+                        <li><a href="#" class="hover:underline">Returns & Refunds</a></li>
+                        <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 2: About Daraz -->
+                <div>
+                    <h3 class="text-gray-900 font-bold text-lg">About Daraz</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li><a href="#" class="hover:underline">Daraz Blog</a></li>
+                        <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 3: Payment Methods -->
+                <div>
+                    <h3 class="text-gray-900 font-bold text-lg">Payment Methods</h3>
+                    <div class="flex space-x-4 mt-4">
+                        <img src="./assets/cash.png" alt="Cash" class="h-8">
+                        <img src="./assets/visa.png" alt="Visa" class="h-8">
+                        <img src="./assets/mastercard.png" alt="Mastercard" class="h-8">
+                        <img src="./assets/easypaisa.png" alt="Easypaisa" class="h-8">
+                        <img src="./assets/jazzcash.png" alt="JazzCash" class="h-8">
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center text-gray-600 mt-10 border-t pt-4">
+                © 2025 Daraz. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
